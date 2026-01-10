@@ -1240,6 +1240,7 @@ select {
   background-color: rgba(30, 41, 59, var(--tw-bg-opacity));
 }
 
+
 .active\:bg-indigo-600:active {
   --tw-bg-opacity: 1;
   background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
@@ -1896,6 +1897,10 @@ select {
 
 .min-w-140-px {
   min-width: 140px;
+}
+
+.opacity-25 {
+  opacity: 0.25;
 }
 
 .opacity-50 {
