@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import NotificationDropdown from "components/Dropdowns/NotificationDropdown.js";
 import UserDropdown from "components/Dropdowns/UserDropdown.js";
+import { FaUserGraduate } from "react-icons/fa6";
 
 export default function Sidebar() {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
@@ -147,6 +148,28 @@ export default function Sidebar() {
                     }
                   ></i>{" "}
                   Tables
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/admin/gestionuser"
+                  className={
+                    "flex items-center gap-2 text-xs uppercase py-3 font-bold " +
+                    (window.location.href.includes("/admin/gestionuser")
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                >
+                  <FaUserGraduate
+                    className={
+                      "text-sm " +
+                      (window.location.href.includes("/admin/gestionuser")
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  />
+                  <span>Gestion User</span>
                 </Link>
               </li>
 
